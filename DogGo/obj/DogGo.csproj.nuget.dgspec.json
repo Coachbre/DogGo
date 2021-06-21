@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\breko\\source\\repos\\DogGo\\DogGo\\DogGo.csproj": {}
+    "C:\\Users\\breko\\workspace\\csharp\\DogGo\\DogGo\\DogGo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\breko\\source\\repos\\DogGo\\DogGo\\DogGo.csproj": {
+    "C:\\Users\\breko\\workspace\\csharp\\DogGo\\DogGo\\DogGo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\breko\\source\\repos\\DogGo\\DogGo\\DogGo.csproj",
+        "projectUniqueName": "C:\\Users\\breko\\workspace\\csharp\\DogGo\\DogGo\\DogGo.csproj",
         "projectName": "DogGo",
-        "projectPath": "C:\\Users\\breko\\source\\repos\\DogGo\\DogGo\\DogGo.csproj",
+        "projectPath": "C:\\Users\\breko\\workspace\\csharp\\DogGo\\DogGo\\DogGo.csproj",
         "packagesPath": "C:\\Users\\breko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\breko\\source\\repos\\DogGo\\DogGo\\obj\\",
+        "outputPath": "C:\\Users\\breko\\workspace\\csharp\\DogGo\\DogGo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\breko\\AppData\\Roaming\\NuGet\\NuGet.Config",
