@@ -41,16 +41,16 @@ namespace DogGo.Controllers
             return View(owner);
         }
 
-        // GET: OwnersController/Create
-        public ActionResult Create()
+        // GET (returns URL containg html for empty form): OwnersController/Create
+        public ActionResult Create(Owner owner)
         {
             return View();
         }
 
-        // POST: OwnersController/Create
+        // POST (sends completed form to same URL ^^): OwnersController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Owner owner)
         {
             try
             {

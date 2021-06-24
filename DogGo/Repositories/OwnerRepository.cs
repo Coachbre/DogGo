@@ -49,12 +49,12 @@ namespace DogGo.Repositories
                             NeighborhoodId = reader.GetInt32(reader.GetOrdinal("NeighborhoodId"))
                         };
 
-                        walkers.Add(walker);
+                        owners.Add(owner);
                     }
 
                     reader.Close();
 
-                    return walkers;
+                    return owners;
                 }
             }
         }
