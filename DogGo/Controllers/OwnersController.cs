@@ -42,7 +42,7 @@ namespace DogGo.Controllers
         }
 
         // GET (returns URL containg html for empty form): OwnersController/Create
-        public ActionResult Create(Owner owner)
+        public ActionResult CreateForm(Owner owner)
         {
             return View();
         }
@@ -54,11 +54,13 @@ namespace DogGo.Controllers
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                _ownerRepo.AddOwner(owner);
+
+                return RedirectToAction("Index");
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                return View(owner);
             }
         }
 
