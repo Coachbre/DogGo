@@ -66,14 +66,14 @@ namespace DogGo.Controllers
         // GET: DogsController/Edit/5
         public ActionResult Edit(int id)
         {
-            Owner owner = _ownerRepo.GetOwnerById(id);
+            Dog dog = _dogRepo.GetDogById(id);
 
-            if (owner == null)
+            if (dog == null)
             {
                 return NotFound();
             }
 
-            return View(owner);
+            return View(dog);
         }
 
         // POST: DogsController/Edit/5
@@ -109,9 +109,9 @@ namespace DogGo.Controllers
             {
                 _dogRepo.DeleteDog(id);
 
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index");
             }
-            catch
+            catch (Exception ex)
             {
                 return View(dog);
             }
