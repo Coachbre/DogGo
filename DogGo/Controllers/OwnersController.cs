@@ -42,27 +42,27 @@ namespace DogGo.Controllers
         }
 
         // GET (returns URL containg html for empty form): OwnersController/Create
-        public ActionResult CreateForm(Owner owner)
+        public ActionResult Create(Owner owner)
         {
             return View();
         }
 
         // POST (sends completed form to same URL ^^): OwnersController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(Owner owner)
-        {
-            try
-            {
-                _ownerRepo.AddOwner(owner);
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Create(Owner owner)
+        //{
+        //    try
+        //    {
+        //        _ownerRepo.AddOwner(owner);
 
-                return RedirectToAction("Index");
-            }
-            catch (Exception ex)
-            {
-                return View(owner);
-            }
-        }
+        //        return RedirectToAction("Index");
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return View(owner);
+        //    }
+        //}
 
         // GET: OwnersController/Edit/5
         public ActionResult Edit(int id)
